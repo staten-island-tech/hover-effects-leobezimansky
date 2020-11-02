@@ -1,14 +1,17 @@
 @import "_variables.scss";
 @import "_btn.scss";
+@import "_garbanguli.scss";
+@import "_text-effects.scss";
+@import "_communist.scss";
 
 .container {
-    width: 80vw;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem;
-    font-size: 1.5rem;
-    align-items: center;
-    text-align: center;
+  width: 80vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
 }

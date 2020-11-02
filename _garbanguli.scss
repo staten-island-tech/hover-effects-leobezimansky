@@ -1,0 +1,11 @@
+.garbanguli {
+    margin: 1rem;
+    height: 17rem;
+    transition: all 0.3s;
+  }
+  
+  .garbanguli:hover {
+    filter: grayscale(100%);
+    transform: scale(1.7);
+    z-index: 2;
+  }

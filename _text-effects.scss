@@ -1,0 +1,20 @@
+@import "_variables.scss";
+
+.text-effect {
+  font-size: 5rem;
+  margin: 1rem;
+  transition: all 0.3s;
+  font-family: $font;
+  background-image: url(media/eggman.jpg);
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  border-radius: 95%;
+}
+
+.text-effect:hover {
+  background-image: url(media/eggman.jpg);
+  background-position: center;
+  color: color(red);
+  transform: scaleY(3) scaleX(3);
+}

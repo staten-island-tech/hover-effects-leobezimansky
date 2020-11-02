@@ -1,7 +1,53 @@
-@import "_variables.scss"
+@import "_variables.scss";
 
 .btn,
-.btn:link, 
-.btn:visited{
-    
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: color(blue);
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
+  position: relative;
+}
+
+.btn-blue {
+  background-color: color(blue);
+  color: white;
+}
+
+.btn-blue::after {
+  background-color: color(blue);
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 1rem 0.5rem black;
+}
+
+.btn::after {
+  content: "";
+  display: inlane-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  transform: scaleX(1.5) scaleY(1.6);
+  box-shadow: 0 0.5rem 1rem black;
 }

@@ -1,0 +1,243 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: #64141c;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
+  position: relative;
+}
+
+.btn-blue {
+  background-color: #64141c;
+  color: white;
+}
+
+.btn-blue::after {
+  background-color:#64141c;
+  color: white;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 1rem 0.5rem black;
+          box-shadow: 0 1rem 0.5rem black;
+}
+
+.btn::after {
+  content: "";
+  display: inlane-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.5) scaleY(1.6);
+          transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transform: scaleX(1.5) scaleY(1.6);
+          transform: scaleX(1.5) scaleY(1.6);
+  -webkit-box-shadow: 0 0.5rem 1rem black;
+          box-shadow: 0 0.5rem 1rem black;
+}
+
+.garbanguli {
+  margin: 1rem;
+  height: 17rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.garbanguli:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  z-index: 2;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text-effect {
+  font-size: 5rem;
+  margin: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Anton", sans-serif;
+  background-image: url(media/eggman.jpg);
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  border-radius: 95%;
+}
+
+.text-effect:hover {
+  background-image: url(media/eggman.jpg);
+  background-position: center;
+  color: #8990f7;
+  -webkit-transform: scaleY(3) scaleX(3);
+          transform: scaleY(3) scaleX(3);
+  z-index: 2;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.communist-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.communist-gallery {
+  margin: 2rem;
+  position: relative;
+}
+
+.communist {
+  position: absolute;
+  height: 20rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.communist:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  outline: 1rem solid #ff68ff;
+  z-index: 2;
+}
+
+.communist-gallery:hover .communist:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.communist-1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.communist-2 {
+  top: 2rem;
+  right: 0;
+}
+
+.communist-3 {
+  top: -2rem;
+  left: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.piao-piao {
+  height: 30rem;
+  position: relative;
+}
+
+.piao-piao-picture {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.piao-piao-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.piao-piao:hover .piao-piao-picture {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.piao-piao:hover .piao-piao-header {
+  opacity: 1;
+  top: 50%;
+}
+
+.container {
+  width: 80vw;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

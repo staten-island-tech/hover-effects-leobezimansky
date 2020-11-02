@@ -1,0 +1,43 @@
+@import "_variables.scss";
+
+.communist-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.communist-gallery {
+  margin: 2rem;
+  position: relative;
+}
+
+.communist {
+  position: absolute;
+  height: 20rem;
+  transition: all 0.3s;
+}
+
+.communist:hover {
+  transform: scale(1.2);
+  outline: 1rem solid color(orange);
+  z-index: 2;
+}
+
+.communist-gallery:hover .communist:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.communist-1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.communist-2 {
+  top: 2rem;
+  right: 0;
+}
+
+.communist-3 {
+  top: -2rem;
+  left: 0;
+}
